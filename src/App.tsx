@@ -10,14 +10,14 @@ const oidcConfig = {
     console.log(user);
     window.location.hash = '';
   },
-  authority: 'https://accounts.google.com',
-  clientId:
-    '1066073673387-undfdseanu1soilcdprq1p4m8gq8a1iu.apps.googleusercontent.com',
+  authority:
+    'https://twelveb2corg.b2clogin.com/twelveb2corg.onmicrosoft.com/b2c_1_susi_v2',
+  clientId: '516246c7-af35-43bb-bf6b-cb40c333d3f9',
   responseType: 'id_token',
   redirectUri:
     process.env.NODE_ENV === 'development'
       ? 'http://localhost:3000/'
-      : 'https://cobraz.github.io/example-oidc-react',
+      : 'https://basicreactoidcex1.azurewebsites.net/',
 };
 
 function App() {

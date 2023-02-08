@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:3000/example-oidc-react",
+            "webRoot": "${workspaceFolder}/src"
+        },
+        {
+            "name": "SWA: Run example-oidc-react",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:3000/example-oidc-react",
+            "preLaunchTask": "swa: start example-oidc-react",
+            "webRoot": "${workspaceFolder}/src",
+            "timeout": 30000
+        },
+        {
+            "name": "Docker Node.js Launch",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug",
+            "platform": "node"
+        }
+    ]
+}
