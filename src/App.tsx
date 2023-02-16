@@ -10,15 +10,20 @@ const oidcConfig = {
     console.log(user);
     window.location.hash = '';
   },
+
   authority:
-    'https://twelveb2corg.b2clogin.com/twelveb2corg.onmicrosoft.com/b2c_1_susi_v2',
-  clientId: '516246c7-af35-43bb-bf6b-cb40c333d3f9',
-  responseType: 'id_token',
+    'https://auth.pingone.com/f5561d77-6f62-4dd3-b7d9-581d9aa5ffaa/as/',
+  clientId: '03781782-2c30-4e75-b72e-9afb59c17d4d',
+  responseType: 'token id_token',
+  scope: 'openid profile',
   redirectUri:
     process.env.NODE_ENV === 'development'
-      ? 'http://localhost:3000/'
-      : 'https://basicreactoidcex1.azurewebsites.net/',
+      ? 'https://localhost/'
+      : 'https://pingonedemos1.azurewebsites.net',
 };
+
+//console.log('https://localhost/');
+//console.log('https://pingonedemos1.azurewebsites.net');
 
 function App() {
   return (

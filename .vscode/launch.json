@@ -8,14 +8,14 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:3000/example-oidc-react",
+            "url": "http://localhost:80/example-oidc-react",
             "webRoot": "${workspaceFolder}/src"
         },
         {
             "name": "SWA: Run example-oidc-react",
             "request": "launch",
             "type": "pwa-chrome",
-            "url": "http://localhost:3000/example-oidc-react",
+            "url": "http://localhost:80/example-oidc-react",
             "preLaunchTask": "swa: start example-oidc-react",
             "webRoot": "${workspaceFolder}/src",
             "timeout": 30000
