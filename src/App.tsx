@@ -16,7 +16,7 @@ const sleep = (time:any) => {
 //let redirectUri = function () {
   const redirectUri = function () {
     return process.env.NODE_ENV === 'development'
-      ? 'https://localhost/'
+      ? 'https://localhost:3000/'
       : 'https://pingonedemos2.azurewebsites.net';
     /*
   let env = '';
@@ -36,7 +36,7 @@ const sleep = (time:any) => {
     },
 
     authority:
-      'https://auth.pingone.com/f5561d77-6f62-4dd3-b7d9-581d9aa5ffaa/as/',
+      'https://auth.pingone.com/f5561d77-6f62-4dd3-b7d9-581d9aa5ffaa/as/authorize',
     clientId: 'c7f3fc1f-8741-4151-bbb6-8b2059c4fff1',
     responseType: 'token id_token',
     scope: 'openid profile',
