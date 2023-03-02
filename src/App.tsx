@@ -16,7 +16,7 @@ const sleep = (time:any) => {
 const redirectUri = function () {
   return process.env.NODE_ENV === 'development'
     ? 'http://localhost:3000'
-    : 'http://localhost:3000';
+    : 'http://oktademos1.azurewebsites.net';
 };
 
   const oidcConfig = {
