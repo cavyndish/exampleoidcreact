@@ -15,8 +15,8 @@ const sleep = (time:any) => {
 
 const redirectUri = function () {
   return process.env.NODE_ENV === 'development'
-    ? 'https://localhost:3000'
-    : '';
+    ? 'http://localhost:3000'
+    : 'http://localhost:3000';
 };
 
   const oidcConfig = {
