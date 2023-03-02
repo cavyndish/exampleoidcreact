@@ -15,8 +15,8 @@ const sleep = (time:any) => {
 
 const redirectUri = function () {
   return process.env.NODE_ENV === 'development'
-    ? 'https://localhost'
-    : 'https://oktademos1.azurewebsites.net';
+    ? 'https://localhost:3000'
+    : '';
 };
 
   const oidcConfig = {
@@ -26,9 +26,8 @@ const redirectUri = function () {
       window.location.hash = '';
     },
 
-    authority:
-      'https://auth.pingone.com/f5561d77-6f62-4dd3-b7d9-581d9aa5ffaa/as/',
-    clientId: '03781782-2c30-4e75-b72e-9afb59c17d4d',
+    authority: 'https://umg-poc.us.auth0.com/.well-known/openid-configuration',
+    clientId: 'lE06KTKk7VQAvGfg4UbGdL01AEODubMU',
     responseType: 'token id_token',
     scope: 'openid profile',
     redirectUri: redirectUri(),
