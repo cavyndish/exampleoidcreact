@@ -16,7 +16,7 @@ const sleep = (time:any) => {
 //let redirectUri = function () {
   const redirectUri = function () {
     return process.env.NODE_ENV === 'development'
-      ? 'https://localhost:3000'
+      ? 'https://localhost:80'
       : 'https://oktademos1.azurewebsites.net';
     /*
   let env = '';
@@ -38,11 +38,11 @@ const sleep = (time:any) => {
     authority:
       'https://twelveb2corg.b2clogin.com/twelveb2corg.onmicrosoft.com/b2c_1_susi_v2',
     clientId: '7b4bff6e-1a62-436b-a271-c1650c4bbf51',
-    responseType: 'token id_token',
+    responseType: 'token_id',
     scope: 'openid',
     redirectUri: redirectUri(),
   };
-
+  // responseType: 'token id_token',
   //scope: 'openid profile',
 
 console.log('process.env.NODE_ENV = ' + process.env.NODE_ENV);
