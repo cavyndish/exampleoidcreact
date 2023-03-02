@@ -13,20 +13,11 @@ const sleep = (time:any) => {
 };
 */
 
-//let redirectUri = function () {
-  const redirectUri = function () {
-    return process.env.NODE_ENV === 'development'
-      ? 'https://localhost/'
-      : 'https://pingonedemos1.azurewebsites.net';
-    /*
-  let env = '';
-  if (process.env.NODE_ENV === 'development') 
-    env = 'https://localhost:3000/';
-  else 
-    env = 'https://pingonedemos1.azurewebsites.net';
-  return env;
-  */
-  };
+const redirectUri = function () {
+  return process.env.NODE_ENV === 'development'
+    ? 'https://localhost'
+    : 'https://oktademos1.azurewebsites.net';
+};
 
   const oidcConfig = {
     onSignIn: async (user: any) => {
