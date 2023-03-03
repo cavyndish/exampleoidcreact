@@ -1,0 +1,2 @@
+CONTAINER ID   IMAGE          COMMAND                  CREATED        STATUS        PORTS                NAMES
+4283d0a1f83d   5448f6d11096   "/docker-entrypoint.…"   12 hours ago   Up 12 hours   0.0.0.0:80->80/tcp   eloquent_snyder

@@ -13,37 +13,25 @@ const sleep = (time:any) => {
 };
 */
 
-//let redirectUri = function () {
-  const redirectUri = function () {
-    return process.env.NODE_ENV === 'development'
-      ? 'https://localhost:80'
-      : 'https://oktademos1.azurewebsites.net';
-    /*
-  let env = '';
-  if (process.env.NODE_ENV === 'development') 
-    env = 'https://localhost:3000/';
-  else 
-    env = 'https://pingonedemos1.azurewebsites.net';
-  return env;
-  */
-  };
+const redirectUri = function () {
+  return process.env.NODE_ENV === 'development'
+    ? 'http://localhost:3000'
+    : 'https://oktademos1.azurewebsites.net';
+};
 
-  const oidcConfig = {
-    onSignIn: async (user: any) => {
-      alert('You just signed in, congratz! Check out the console!');
-      console.log(user);
-      window.location.hash = '';
-    },
+const oidcConfig = {
+  onSignIn: async (user: any) => {
+    alert('You just signed in, congratz! Check out the console!');
+    console.log(user);
+    window.location.hash = '';
+  },
 
-    authority:
-      'https://twelveb2corg.b2clogin.com/twelveb2corg.onmicrosoft.com/b2c_1_susi_v2',
-    clientId: '7b4bff6e-1a62-436b-a271-c1650c4bbf51',
-    responseType: 'token_id',
-    scope: 'openid',
-    redirectUri: redirectUri(),
-  };
-  // responseType: 'token id_token',
-  //scope: 'openid profile',
+  authority: 'https://umg-poc.us.auth0.com/.well-known/openid-configuration',
+  clientId: 'lE06KTKk7VQAvGfg4UbGdL01AEODubMU',
+  responseType: 'token id_token',
+  scope: 'openid profile',
+  redirectUri: redirectUri(),
+};
 
 console.log('process.env.NODE_ENV = ' + process.env.NODE_ENV);
 console.log(redirectUri());

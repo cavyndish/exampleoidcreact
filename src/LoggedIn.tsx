@@ -14,7 +14,7 @@ const LoggedIn = () => {
       </div>
     );
   }
-  return <div>Not logged in! Try to refresh to be redirected to your provder.</div>;
+  return <div>Not logged in! Try to refresh to be redirected to your provider.</div>;
 };
 
 export default LoggedIn;
