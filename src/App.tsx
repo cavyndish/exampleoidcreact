@@ -16,7 +16,7 @@ const sleep = (time:any) => {
 //let redirectUri = function () {
   const redirectUri = function () {
     return process.env.NODE_ENV === 'development'
-      ? 'https://localhost/'
+      ? 'http://localhost:3000'
       : 'https://pingonedemos1.azurewebsites.net';
     /*
   let env = '';
