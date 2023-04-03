@@ -9,10 +9,8 @@ const LoggedIn = () => {
     return (
       <div>
         <strong>Logged in! 🎉</strong>
-        <br />
-        Hello {auth.userData?.profile.name}{' '}
-        <br />
-        <button onClick={() => auth.signOut()}>Log out!</button>
+           Hello {auth.userData?.profile.name} 
+        <button onClick={() => auth.signOut()}>Log out</button>
       </div>
     );
   }
@@ -21,4 +19,3 @@ const LoggedIn = () => {
 };
 
 export default LoggedIn;
-//<button onClick={auth.signinRedirect}>Log in</button>;
