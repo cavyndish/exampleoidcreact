@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-image: url("https://azr47-us-authx-ui-devlocal.azurewebsites.net/03781782-2c30-4e75-b72e-9afb59c17d4d/BackgroundImage/oscar-keys-medium.png");
 }
 
 .App-logo {
@@ -14,7 +15,6 @@
 }
 
 .App-header {
-  background-color: #1b18cd;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
