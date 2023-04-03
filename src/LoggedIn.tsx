@@ -1,8 +1,10 @@
 import React from 'react';
 import { useAuth } from 'oidc-react';
 
+
 const LoggedIn = () => {
   const auth = useAuth();
+ 
   if (auth && auth.userData) {
     return (
       <div>
@@ -14,7 +16,9 @@ const LoggedIn = () => {
       </div>
     );
   }
-  return <div>Not logged in! Try to refresh to be redirected to your provder.</div>;
+
+  return <button onClick={() => auth.signIn()}>Log in</button>;
 };
 
 export default LoggedIn;
+//<button onClick={auth.signinRedirect}>Log in</button>;
