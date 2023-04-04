@@ -10,7 +10,7 @@ import { sign } from 'crypto';
 const redirectUri = function () {
   return process.env.NODE_ENV === 'development'
     ? 'http://localhost:3000'
-    : 'https://pingonedemos3.azurewebsites.net';
+    : 'https://oktademos3.azurewebsites.net';
 };
 
 const oidcConfig = {
@@ -20,9 +20,8 @@ const oidcConfig = {
     window.location.hash = '';
   },
   autoSignIn: false,
-  authority:
-    'https://auth.pingone.com/f5561d77-6f62-4dd3-b7d9-581d9aa5ffaa/as/',
-  clientId: '50125e77-3432-4dc9-8829-8a57061fab5f',
+  authority: 'https://umg-poc-t03.us.auth0.com',
+  clientId: 'RUQ258qDepwjvxlTQTVisqBVfntBEey7',
   responseType: 'token id_token',
   scope: 'openid profile',
   redirectUri: redirectUri(),
