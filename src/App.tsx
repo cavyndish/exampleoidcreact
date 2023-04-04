@@ -15,7 +15,8 @@ const redirectUri = function () {
 
 const oidcConfig = {
   onSignIn: async (user: any) => {
-    alert('You just signed in, congratz! Check out the console!');
+    console.log('You just signed in, congratz!');
+   // alert('You just signed in, congratz! Check out the console!');
     window.location.hash = '';
   },
   autoSignIn: false,

@@ -7,9 +7,9 @@ const LoggedIn = () => {
  
   if (auth && auth.userData) {
     return (
-      <div>
-        <strong>Logged in! 🎉</strong>
-           Hello {auth.userData?.profile.name} 
+      <div className="text-white">
+        <strong>Logged in!</strong>
+        Hello {auth.userData?.profile.name}
         <button onClick={() => auth.signOut()}>Log out</button>
       </div>
     );
