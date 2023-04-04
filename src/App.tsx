@@ -31,6 +31,17 @@ const oidcConfig = {
 //console.log(redirectUri());
 
 function App() {
+  
+  // Function to clear complete cache data
+  const clearCacheData = () => {
+    caches.keys().then((names) => {
+      names.forEach((name) => {
+        caches.delete(name);
+      });
+    });
+    console.log('cache has been cleared');
+  };
+
   return (
     <AuthProvider {...oidcConfig}>
       <div className="App">
