@@ -10,19 +10,19 @@ import { sign } from 'crypto';
 const redirectUri = function () {
   return process.env.NODE_ENV === 'development'
     ? 'http://localhost:3000'
-    : 'https://pingonedemos1.azurewebsites.net';
+    : 'https://pingonedemos2.azurewebsites.net';
 };
 
 const oidcConfig = {
   onSignIn: async (user: any) => {
     console.log('You just signed in, congratz!');
-   // alert('You just signed in, congratz! Check out the console!');
+    // alert('You just signed in, congratz! Check out the console!');
     window.location.hash = '';
   },
   autoSignIn: false,
   authority:
     'https://auth.pingone.com/f5561d77-6f62-4dd3-b7d9-581d9aa5ffaa/as/',
-  clientId: '03781782-2c30-4e75-b72e-9afb59c17d4d',
+  clientId: 'c7f3fc1f-8741-4151-bbb6-8b2059c4fff1',
   responseType: 'token id_token',
   scope: 'openid profile',
   redirectUri: redirectUri(),

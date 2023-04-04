@@ -1,8 +1,9 @@
 .App {
-  text-align: right;
-    min-height: 100vh;
-  background-image: url("https://azr47-us-authx-ui-devlocal.azurewebsites.net/03781782-2c30-4e75-b72e-9afb59c17d4d/BackgroundImage/oscar-keys-medium.png");
-}
+    text-align: right;
+      min-height: 100vh;
+      background-image: url("https://azr47-us-authx-ui-devlocal.azurewebsites.net/c7f3fc1f-8741-4151-bbb6-8b2059c4fff1/BackgroundImage/Scenario2.png");
+        background-size: cover;
+      }
 
 .App-logo {
   height: 40vmin;
