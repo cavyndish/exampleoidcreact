@@ -10,7 +10,7 @@ import { sign } from 'crypto';
 const redirectUri = function () {
   return process.env.NODE_ENV === 'development'
     ? 'http://localhost:3000'
-    : 'https://oktademos3.azurewebsites.net';
+    : 'https://azureb2cs3demo.azurewebsites.net/';
 };
 
 const oidcConfig = {
@@ -20,10 +20,11 @@ const oidcConfig = {
     window.location.hash = '';
   },
   autoSignIn: false,
-  authority: 'https://umg-poc-t03.us.auth0.com',
-  clientId: 'RUQ258qDepwjvxlTQTVisqBVfntBEey7',
+  authority:
+    'https://login.microsoftonline.com/284f3ba1-6d4d-4b80-b263-c1df55851150/oauth2/v2.0/authorize',
+  clientId: 'cab54079-6749-4ca0-b508-24f6eec1aa27',
   responseType: 'token id_token',
-  scope: 'openid profile',
+  scope: 'openid profile offline_access',
   redirectUri: redirectUri(),
 };
 

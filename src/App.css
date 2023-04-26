@@ -1,8 +1,7 @@
 .App {
     text-align: right;
       min-height: 100vh;
-      background-image: url("https://azr47-us-authx-ui-devlocal.azurewebsites.net/50125e77-3432-4dc9-8829-8a57061fab5f/BackgroundImage/Scenario3.png");
-        background-size: cover;
+      background-size: cover;
       }
 
 .App-logo {
