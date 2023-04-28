@@ -21,10 +21,10 @@ const oidcConfig = {
   },
   autoSignIn: false,
   authority:
-    'https://login.microsoftonline.com/284f3ba1-6d4d-4b80-b263-c1df55851150/oauth2/v2.0/authorize',
+    'https://twelveb2corg.b2clogin.com/twelveb2corg.onmicrosoft.com/B2C_1A_SIGNUP_SIGNIN_S3_EXAMPLE',
   clientId: 'cab54079-6749-4ca0-b508-24f6eec1aa27',
-  responseType: 'token id_token',
-  scope: 'openid profile offline_access',
+  responseType: 'id_token',
+  scope: 'openid',
   redirectUri: redirectUri(),
 };
 

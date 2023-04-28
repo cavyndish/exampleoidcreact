@@ -2,7 +2,7 @@
   "name": "test-react-oidc",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pingonedemo.azurewebsites.net/",
+  "homepage": "https://azureb2cs3demo.azurewebsites.net/",
   "repository": "github:cobraz/example-oidc-react",
   "scripts": {
     "start": "react-scripts start",
